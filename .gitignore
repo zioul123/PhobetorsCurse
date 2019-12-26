@@ -72,3 +72,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Asset store stuff that isn't used
+Content/InfinityBladeWeapons/*
