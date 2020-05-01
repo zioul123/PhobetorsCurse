@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 # Asset store stuff that isn't used
 Content/_AssetStoreAssets/*
+Content/ParagonAurora/*
+Content/ParagonGideon/*
+Content/ParagonGreystone/*
