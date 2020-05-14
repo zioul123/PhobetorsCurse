@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "EnemySpawnInfo.h"
+#include "LevelInfo.h"
 #include "LevelManagementLibrary.generated.h"
 
 /**
@@ -13,6 +15,10 @@ UCLASS()
 class PHOBETORSCURSE_API ULevelManagementLibrary : public UBlueprintFunctionLibrary
 {
     GENERATED_BODY()
-        UFUNCTION(BlueprintCallable, Category = "LevelManagement")
-        static FString HelloWorld(int a, int b);
+
+    UFUNCTION(BlueprintCallable, Category = "LevelManagement")
+    static FEnemySpawnInfo StageToSpawnInfo(FEnemyStageInfo stageInfo);
+
+    UFUNCTION(BlueprintCallable, Category = "LevelManagement")
+    static TArray<FEnemySpawnInfoList> EnemyStageInfoTableToSpawnInfoByStage(TArray<FEnemyStageInfo> stageInfo);
 };

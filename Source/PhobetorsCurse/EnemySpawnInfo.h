@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include <Runtime\Engine\Classes\GameFramework\Character.h>
+#include "Engine/DataTable.h"
 #include "EnemySpawnInfo.generated.h"
 
 UENUM(BlueprintType)
@@ -13,11 +14,12 @@ enum EEnemies {
 };
 
 USTRUCT(BlueprintType)
-struct FEnemySpawnInfo {
+struct FEnemySpawnInfo : public FTableRowBase {
     GENERATED_BODY()
 
+public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-        TSubclassOf<ACharacter> EnemyType;
+        TEnumAsByte<EEnemies> EnemyType;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
         int Number;
