@@ -9,11 +9,11 @@
 
 UENUM(BlueprintType)
 enum ELevelMap {
-    STAGE_GENERIC_1X2_E UMETA(DisplayName = "NormalStage_1x2_E"),
-    STAGE_GENERIC_2X1_N UMETA(DisplayName = "NormalStage_2x1_N"),
-    STAGE_GENERIC_1X2_W UMETA(DisplayName = "NormalStage_1x2_W"),
-    STAGE_GENERIC_2X1_S UMETA(DisplayName = "NormalStage_2x1_S"),
-    STAGE_SPECIAL_MIS   UMETA(DisplayName = "L0_Miseria")
+    NormalStage_1x2_E UMETA(DisplayName = "NormalStage_1x2_E"),
+    NormalStage_2x1_N UMETA(DisplayName = "NormalStage_2x1_N"),
+    NormalStage_1x2_W UMETA(DisplayName = "NormalStage_1x2_W"),
+    NormalStage_2x1_S UMETA(DisplayName = "NormalStage_2x1_S"),
+    L0_Miseria   UMETA(DisplayName = "L0_Miseria")
 };
 
 USTRUCT(BlueprintType)
@@ -25,7 +25,7 @@ public:
         TEnumAsByte<ELevelMap> Map;
 
     FMapStageInfo() {
-        Map = ELevelMap::STAGE_GENERIC_1X2_E;
+        Map = ELevelMap::NormalStage_1x2_E;
     }
 };
 
