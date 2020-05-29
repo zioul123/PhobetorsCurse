@@ -15,6 +15,12 @@ FEnemySpawnInfo ULevelManagementLibrary::StageToSpawnInfo(FEnemyStageInfo stageI
 
 TArray<FEnemySpawnInfoList> ULevelManagementLibrary::EnemyStageInfoTableToSpawnInfoByStage(TArray<FEnemyStageInfo> stageInfo) {
     TArray<FEnemySpawnInfoList> result;
+    // Handle empty array
+    if (stageInfo.Num() == 0) {
+        FEnemySpawnInfoList newRow;
+        result.Add(newRow);
+        return result;
+    }
 
     // Add the placeholders first
     int firstStage = stageInfo[0].Stage;
