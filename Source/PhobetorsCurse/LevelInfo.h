@@ -9,11 +9,17 @@
 
 UENUM(BlueprintType)
 enum ELevelMap {
+    // Generic Combat Levels, for testing
     NormalStage_1x2_E UMETA(DisplayName = "NormalStage_1x2_E"),
     NormalStage_2x1_N UMETA(DisplayName = "NormalStage_2x1_N"),
     NormalStage_1x2_W UMETA(DisplayName = "NormalStage_1x2_W"),
     NormalStage_2x1_S UMETA(DisplayName = "NormalStage_2x1_S"),
-    L0_Miseria   UMETA(DisplayName = "L0_Miseria"),
+    L0_Miseria        UMETA(DisplayName = "L0_Miseria"),
+
+    // Physical world and main menu
+    PhysicalMansion   UMETA(DisplayName = "PhysicalMansion"),
+    MainMenu          UMETA(DisplayName = "MainMenu"),
+
     // Level 0 - The Dream Realm
     L00_00_Nightmare UMETA(DisplayName = "L00_00_Nightmare"),
     L00_01_Nightmare UMETA(DisplayName = "L00_01_Nightmare"),
