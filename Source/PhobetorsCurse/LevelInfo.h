@@ -29,6 +29,23 @@ enum ELevelMap {
     L00_05_Nightmare UMETA(DisplayName = "L00_05_Nightmare")
 };
 
+UENUM(BlueprintType)
+enum ELevels {
+    // Generic Combat Levels, for testing
+    Level0  UMETA(DisplayName = "Level0"),
+    Level1  UMETA(DisplayName = "Level1"),
+    Level2  UMETA(DisplayName = "Level2"),
+    Level3  UMETA(DisplayName = "Level3"),
+    Level4  UMETA(DisplayName = "Level4"),
+    Level5  UMETA(DisplayName = "Level5"),
+    Level6  UMETA(DisplayName = "Level6"),
+    Level7  UMETA(DisplayName = "Level7"),
+    Level8  UMETA(DisplayName = "Level8"),
+    Level9  UMETA(DisplayName = "Level9"),
+    Level10 UMETA(DisplayName = "Level10"),
+    Level11 UMETA(DisplayName = "Level11")
+};
+
 USTRUCT(BlueprintType)
 struct FMapStageInfo : public FTableRowBase {
     GENERATED_BODY()
